@@ -1,0 +1,144 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+
+:root {
+  --main: rgb(255, 127, 80);
+  --business: rgb(0, 191, 255);
+  --personal: var(--main);
+  /* you can make personal&main nice green*/
+  --light: #eee;
+  --dark: #313154;
+  /* nice blue*/
+  --caution: tomato;
+  /*--danger: #ff5b57*/
+  --grey: #888;
+  --done: rgb(37, 205, 138);
+
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  --business-glow: 0px 0px 4px rgba(0, 191, 255, 0.75);
+  --personal-glow: 0px 0px 4px rgba(255, 127, 80, 0.75);
+}
+html {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: !important smooth;
+  /*max-width: 100%;*/
+  max-width: 900px;
+  position: relative;
+
+  margin: 0 auto;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.return {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+}
+.return button {
+  outline: none;
+  border: none;
+}
+.return:active {
+  transform: translate(3%, 3%);
+}
+section {
+  padding: 1em;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  /*background-color: #888;*/
+  text-decoration: underline;
+}
+h3 {
+  font-size: 1.75rem;
+  text-decoration: underline;
+}
+p {
+  font-size: 1.5em;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+.personal {
+  color: white;
+  background-color: #495371;
+  position: fixed;
+
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  text-align: center;
+  margin-right: 20%;
+  border-radius: 5px;
+}
+.personal a {
+  color: white;
+  text-decoration: none;
+}
+
+.profile {
+  margin-top: 18rem;
+  color: white;
+  background-color: #9fc088;
+  border-radius: 5px;
+}
+
+.skills {
+  color: #888;
+  background-color: #f4eee8;
+  text-align: center;
+  border-radius: 5px;
+}
+.education {
+  color: #888;
+  background-color: #ffb562;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.employment {
+  color: white;
+  background-color: #114e60;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+.achievements {
+  color: white;
+  background-color: #dfbb9d;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+.additional {
+  color: white;
+  background-color: #73777b;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  padding-bottom: 2rem;
+}
